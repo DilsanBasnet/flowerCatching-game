@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> 🌹 FlowerCatcher-Game (by Dilsan Basnet) | Macondo Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
     <nav>
         <h2>Catch Flowers</h2>
+        <img src="" alt="Game Profile Picture" class="profile-game">
     </nav>
 
     <div id="main-wrapper">
         <div id="game-container">
             <div id="start-screen" class="overlay">
-                <h1>Welcome to FlowerCatcher</h1>
+                <h1>Welcome to Flower Catcher</h1>
                 <p>Catch Flowers 🌹</p>
                 <button id="start-btn">Start Game</button>
             </div>
@@ -28,10 +31,26 @@
                 </div>
             </div>
             <div id="player"></div>
-            <div id="game-over" class="overlay" ></div>
+            <div id="game-over" class="overlay" style="display: none;">
+                <h1 id="death-reason" style="color: rgb(189, 43, 43);">Game Over</h1>
+                <p>Score: <span id="final-score">0</span></p>
+                <button onclick="location.reload()">Restart</button>
+            </div>
         </div>
-
     </div>
+
+    <footer class="subfooter">
+        <h3>Your Score</h3>
+        <input type="text" placeholder="Your Score?" >
+        <input type="submit">
+    </footer>
+
+    <footer>
+        <span>Created By <strong> Dilsan Basnet (Xettri)</strong></span>
+        <span><a href="https://github.com/DilsanBasnet" target="_blank"><i class="fa fa-github" style="font-size:24px"></i></a></span>
+        <span>Macondo Project</span>
+    </footer>
+    
 
     
 </body>
