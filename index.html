@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 🌹 FlowerCatcher-Game (by Dilsan Basnet) | Macondo Project</title>
+    <title> 🌺 FlowerCatcher-Game (by Dilsan Basnet) | Macondo Project</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon">
+    
 </head>
 <body>
 
     <nav>
-        <h2>Catch Flowers</h2>
+        <h2>FLOWER-CATCHING-GAME</h2>
         <img src="images/profile pic catch flowers.png" alt="Game Profile Picture" class="profile-game">
     </nav>
 
     <div id="main-wrapper">
         <div id="game-container">
             <div id="start-screen" class="overlay">
-                <h1>Welcome to Flower Catcher</h1>
-                <p>Catch Flowers 🌹</p>
+                <h1 style="font-size: 25px;">Welcome to Flower Catcher | <span style="font-size: 13px;">Dilsan Basnet</span></h1>
+                <p>Collect 🌺 | Avoid 💣</p>
                 <button id="start-btn">Start Game</button>
             </div>
             <div id="ui-layer">
@@ -31,6 +33,7 @@
                     </div>
                 </div>
             </div>
+            
             <div id="player"></div>
             <div id="game-over" class="overlay" style="display: none;">
                 <h1 id="death-reason" style="color: rgb(189, 43, 43);">Game Over</h1>
@@ -40,19 +43,15 @@
         </div>
     </div>
 
-    <!-- <footer class="subfooter">
-        <h3>Your Score</h3>
-        <input type="text" placeholder="Your Score?" >
-        <input type="submit">
-    </footer> -->
-
-    <footer>
-        <span>Created By <strong> Dilsan Basnet (Xettri)</strong></span>
+    <footer class="footer-flex">
+        <span >Created By <strong style="font-style: italic;"> Dilsan Basnet</strong></span>
         <span><a href="https://github.com/DilsanBasnet" target="_blank"><i class="fa fa-github" style="font-size:32px"></i></a></span>
-        <span>Macondo Project</span>
+        <span><a href="https://macondo.hackclub.com/dashboard?from=fade" style="color: rgb(182, 237, 17);" 
+            target="_blank">Macondo <span class="macondo-logo" >&#129419</span> Project</a> &#8592; click here to visit Macondo</span>
     </footer>
 
 
+    <script src="script.js"></script>
     
 </body>
-</html>
+</html> 
