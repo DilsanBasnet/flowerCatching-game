@@ -23,6 +23,7 @@ body {
     overflow: hidden;
     color: var(--brown);
     min-height: 100vh;
+    font-family: sans-serif, Arial;
 }
 
 nav {
@@ -38,6 +39,12 @@ nav h2 {
     font-size: 23;
     letter-spacing: 1px;
     margin: 0;
+}
+nav .profile-game {
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
 }
 
 footer {
@@ -176,6 +183,6 @@ button {
     color: rgb(161, 6, 133);
     margin-top: 17px;
     ;
-    
+
 
 }
