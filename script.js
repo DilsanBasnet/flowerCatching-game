@@ -51,12 +51,12 @@ container.addEventListener('touchmove', (e) => {
 
 function spawnEntity() {
     
-    const isBomb = Math.random() < 0.2;
+    const isBomb = Math.random() < 0.5;
     const entity = {
         type: isBomb ? 'bomb' : 'flower', 
         x: Math.random() * (container.offsetWidth - 40) + 20, 
         y: -50,
-        speed: 4 + Math.random() * 3 + (score / 300),
+        speed: 5 + Math.random() * 3 + (score / 300),
         element: document.createElement('div')
     };
 
@@ -122,7 +122,7 @@ function update(timestamp) {
             }
     }
 
-    if(health <= 0) endGame('You lost the game! 😔 ');
+    if(health <= 0) endGame('You Lost The Game! 🤯 ');
 
     if(gameActive) requestAnimationFrame(update);
 }
@@ -138,7 +138,7 @@ function removeEntity(e, index) {
 function updateHealthUI() {
 
     healthFill.style.width = health + '%';
-    healthFill.style.backgroundColor = health < 40 ? '(rgb(99, 25, 25))' : '(rgb(50, 148, 47))' ;
+    healthFill.style.backgroundColor = health < 40 ? 'rgb(99, 25, 25)' : 'rgb(27, 86, 25)' ;
 
 }
 
