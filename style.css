@@ -68,12 +68,13 @@ footer a {
 }
 
 #main-wrapper {
-    flex: 1;
     display: flex;
+    flex:1;
     justify-content: center;
     align-items: center;
     padding: 10px;
 }
+
 
 #game-container {
     position: relative;
@@ -200,12 +201,6 @@ button {
     gap: 5px;
 }
 
-.macondo{
-    font-size: 1rem;
-    color: rgb(98, 101, 10);
-    text-decoration: dashed;
-
-}
     
 
    
